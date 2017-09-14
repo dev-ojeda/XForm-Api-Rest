@@ -14,7 +14,14 @@
 
         async void OnUpcomingAppointmentsButtonClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new UpcomingAppointmentsPage());
+            await Navigation.PushAsync(new XForm_Api_Rest.Pages.UpcomingAppointmentsPage());
+        }
+
+        async void OnLogoutButtonClicked(object sender, EventArgs e)
+        {
+            App.IsUserLoggedIn = false;
+            Navigation.InsertPageBefore(new XForm_Api_Rest.Pages.LoginPage(), this);
+            await Navigation.PopAsync();
         }
     }
 }

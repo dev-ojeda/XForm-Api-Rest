@@ -20,7 +20,7 @@
         async void OnLogoutButtonClicked(object sender, EventArgs e)
         {
             App.IsUserLoggedIn = false;
-            Navigation.InsertPageBefore(new LoginPage(), this);
+            Navigation.InsertPageBefore(new XForm_Api_Rest.Pages.LoginPage(), this);
             await Navigation.PopAsync();
         }
     }

@@ -4,6 +4,9 @@
              x:Class="XForm_Api_Rest.Pages.TodayPage"
              Icon="today.png"
 			 Title="Today">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Logout" Clicked="OnLogoutButtonClicked" />
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Today's appointments go here" 
