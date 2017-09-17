@@ -126,6 +126,13 @@
       <Name>XForm_Api_Rest</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\..\..\..\PROYECTOS\Versiones CPL\DESARROLLO\01_09_17_V1\packages\SonarAnalyzer.CSharp.6.4.0.3347\analyzers\SonarAnalyzer.CSharp.dll" />
+    <Analyzer Include="..\..\..\..\PROYECTOS\Versiones CPL\DESARROLLO\01_09_17_V1\packages\SonarAnalyzer.CSharp.6.4.0.3347\analyzers\SonarAnalyzer.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Maquina_de_Humo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

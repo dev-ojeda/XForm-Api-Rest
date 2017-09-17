@@ -36,9 +36,9 @@
                 Navigation.InsertPageBefore(new TabbedPage
                                             {
                                                 Children = {
-                                                   new MainPage(),
-                                                   new SchedulePage(),
-                                                   new SettingsPage()
+                                                   new MainPage(usuarioModel),
+                                                   new SchedulePage(usuarioModel),
+                                                   new SettingsPage(usuarioModel)
                                                 }          
                                             }, this);
                 await Navigation.PopAsync();

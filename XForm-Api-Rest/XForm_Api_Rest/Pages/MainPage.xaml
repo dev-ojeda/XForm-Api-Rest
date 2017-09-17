@@ -7,10 +7,6 @@
         <ToolbarItem Text="Logout" Clicked="OnLogoutButtonClicked" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Main app content goes here" 
-                   HorizontalOptions="Center" 
-                   VerticalOptions="CenterAndExpand" />
-        </StackLayout>
+ 
     </ContentPage.Content>
 </ContentPage>

@@ -1,14 +1,17 @@
-﻿using System;
-
-namespace XForm_Api_Rest.ViewModel
+﻿namespace XForm_Api_Rest.ViewModel
 {
     using System.Collections.Generic;
+    using System.Collections.ObjectModel;
     using XForm_Api_Rest.Model;
 
     public class EquipoViewModel
     {
-        public List<EquipoModel> ListarEquipo { get; set; }
+        private ObservableCollection<EquipoModel> _listarEquipo;
+
+        public ObservableCollection<EquipoModel> ListarEquipo { get => _listarEquipo; set => _listarEquipo = value; }
 
         public EquipoViewModel() => ListarEquipo = new EquipoModel().ListarEquipo();
+
+        
     }
 }

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XForm_Api_Rest.Pages.EquiposPage">
+    <ContentPage.Content>
+        <StackLayout HeightRequest="100">
+            <Label x:Name="lblEquipo" Text="Equipos" FontSize="34"/>
+            <ListView x:Name="listarEquipos" HasUnevenRows="True" RowHeight="50" ItemsSource="{Binding EquipoViewModel}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout x:Name="slEquipos" Orientation="Horizontal" Padding="5">
+                                <Image 
+                                    x:Name="imgEquipo" 
+                                    WidthRequest="100"
+                                    HeightRequest="100"
+                                    Source="{Binding ImageUrl, StringFormat='{0}.png'}"/>
+                                <StackLayout Orientation="Vertical">
+                                    <Label 
+                                    x:Name="lblEquipo" 
+                                    Text="{Binding NombreEquipo}"/>
+                                    <Label 
+                                    x:Name="lblDescripcionEquipo" 
+                                    Text="{Binding DescripcionEquipo}"/>
+                                    <Label 
+                                    x:Name="lblPrecio" 
+                                    Text="{Binding Precio}"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                        <!--<TextCell 
+                            Text="{Binding Nombre}"
+                            TextColor="Purple"
+                            Detail="{Binding DescripcionProducto}"
+                            DetailColor="Purple"/>-->
+                        <!--<ImageCell
+                            x:Name="imgEquipos"
+                            Text="{Binding Nombre}"
+                            TextColor="Purple"
+                            Detail="{Binding DescripcionProducto}"
+                            DetailColor="Purple"
+                            ImageSource="{Binding ImageUrl}"/>-->
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

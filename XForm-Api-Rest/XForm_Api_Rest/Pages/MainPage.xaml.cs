@@ -5,16 +5,19 @@
     using XForm_Api_Rest.Model;
     public partial class MainPage : ContentPage
     {
-        public UsuarioModel model { get; set; }
-
+        private UsuarioModel usuarioModel;
+        public UsuarioModel UsuarioModel { get => usuarioModel; set => usuarioModel = value; }
         public MainPage()
         {
             InitializeComponent();
+
+            Navigation.InsertPageBefore(new XForm_Api_Rest.Pages.EquiposPage(), this);
+            Navigation.PopAsync();
         }
 
         public MainPage(UsuarioModel usuarioModel)
         {
-            //lblMensaje.Text = "Bienvenido: "+usuarioModel.Nombre;
+            this.UsuarioModel = usuarioModel;
         }
 
         async void OnLogoutButtonClicked(object sender, EventArgs e)

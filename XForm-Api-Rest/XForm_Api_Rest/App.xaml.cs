@@ -9,6 +9,8 @@
         {
             //InitializeComponent();
 
+            //MainPage = new NavigationPage(new XForm_Api_Rest.Pages.EquiposPage());
+
             if (!IsUserLoggedIn)
             {
                 MainPage = new NavigationPage(new XForm_Api_Rest.Pages.LoginPage());
