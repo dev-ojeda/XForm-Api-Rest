@@ -33,14 +33,7 @@
 
                 UsuarioModel usuarioModel = JsonConvert.DeserializeObject<UsuarioModel>(response);
                 App.IsUserLoggedIn = true;
-                Navigation.InsertPageBefore(new TabbedPage
-                                            {
-                                                Children = {
-                                                   new MainPage(usuarioModel),
-                                                   new SchedulePage(usuarioModel),
-                                                   new SettingsPage(usuarioModel)
-                                                }          
-                                            }, this);
+                Navigation.InsertPageBefore(new XForm_Api_Rest.Pages.MenuPrincipal(usuarioModel), this);
                 await Navigation.PopAsync();
             }
             else

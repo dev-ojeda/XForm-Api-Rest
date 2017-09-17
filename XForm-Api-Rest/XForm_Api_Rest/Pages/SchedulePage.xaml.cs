@@ -20,6 +20,7 @@
 
         public SchedulePage(UsuarioModel usuarioModel)
         {
+            InitializeComponent();
             this.UsuarioModel = usuarioModel;
         }
 

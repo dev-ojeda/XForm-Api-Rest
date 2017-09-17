@@ -1,10 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XForm_Api_Rest.Pages.EquiposPage">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="XForm_Api_Rest.Pages.EquiposPage" 
+             Title="Equipos" Icon="ic_build_black_24dp.png">
+    <!--<ContentPage.ToolbarItems>
+        <ToolbarItem Text="Logout" Clicked="OnLogoutButtonClicked" />
+    </ContentPage.ToolbarItems>-->
     <ContentPage.Content>
         <StackLayout HeightRequest="100">
-            <Label x:Name="lblEquipo" Text="Equipos" FontSize="34"/>
             <ListView x:Name="listarEquipos" HasUnevenRows="True" RowHeight="50" ItemsSource="{Binding EquipoViewModel}">
                 <ListView.ItemTemplate>
                     <DataTemplate>

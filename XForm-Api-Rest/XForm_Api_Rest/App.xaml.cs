@@ -17,7 +17,7 @@
             }
             else
             {
-                MainPage = new NavigationPage(new XForm_Api_Rest.Pages.MainPage());
+                MainPage = new NavigationPage(new XForm_Api_Rest.Pages.MenuPrincipal());
             }
         }
 

@@ -31,7 +31,7 @@
                 if (rootPage != null)
                 {
                     App.IsUserLoggedIn = true;
-                    Navigation.InsertPageBefore(new MainPage(), Navigation.NavigationStack.First());
+                    Navigation.InsertPageBefore(new MenuPrincipal(user), Navigation.NavigationStack.First());
                     await Navigation.PopToRootAsync();
                 }
             }

@@ -1,25 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using XForm_Api_Rest.ViewModel;
-
-namespace XForm_Api_Rest.Pages
+﻿namespace XForm_Api_Rest.Pages
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
+    using System;
+    using Xamarin.Forms;
+    using XForm_Api_Rest.Model;
+    using XForm_Api_Rest.ViewModel;
+
     public partial class EquiposPage : ContentPage
     {
-        EquipoViewModel equipoViewModel;
+        private EquipoViewModel equipoViewModel;
+        private UsuarioModel usuarioModel;
+        public UsuarioModel UsuarioModel { get => usuarioModel; set => usuarioModel = value; }
         public EquiposPage()
         {
             InitializeComponent();
             equipoViewModel = new EquipoViewModel();
             listarEquipos.ItemsSource = equipoViewModel.ListarEquipo;
-            //BindingContext = equipoViewModel;
+        }
+
+        public EquiposPage(UsuarioModel usuarioModel)
+        {
+            InitializeComponent();
+            this.UsuarioModel = usuarioModel;
+            equipoViewModel = new EquipoViewModel();
+            listarEquipos.ItemsSource = equipoViewModel.ListarEquipo;
+        }
+
+        async void OnLogoutButtonClicked(object sender, EventArgs e)
+        {
+            App.IsUserLoggedIn = false;
+            Navigation.InsertPageBefore(new XForm_Api_Rest.Pages.LoginPage(), this);
+            await Navigation.PopAsync();
         }
     }
 }

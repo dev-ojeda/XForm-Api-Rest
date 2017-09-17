@@ -18,6 +18,7 @@
 
         public SettingsPage(UsuarioModel usuarioModel)
         {
+            InitializeComponent();
             this.UsuarioModel = usuarioModel;
         }
 

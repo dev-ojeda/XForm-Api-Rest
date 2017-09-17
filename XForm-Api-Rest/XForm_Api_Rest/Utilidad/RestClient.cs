@@ -13,7 +13,6 @@ namespace XForm_Api_Rest.Utilidad
             string jsonValue = "";
             try
             {
-
                 using (HttpClient client = new HttpClient())
                 {
                     var response = await client.GetAsync(url);
