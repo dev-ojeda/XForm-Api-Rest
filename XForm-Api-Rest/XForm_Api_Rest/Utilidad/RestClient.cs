@@ -15,14 +15,14 @@ namespace XForm_Api_Rest.Utilidad
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    var response = await client.GetAsync(url);
+                    HttpResponseMessage response = await client.GetAsync(url);
                     if (response.StatusCode == System.Net.HttpStatusCode.OK)
                     {
                         jsonValue = await response.Content.ReadAsStringAsync();
                     }
                 }
             }
-            catch (Exception ex)
+            catch (HttpRequestException ex)
             {
                 throw (ex);
             }

@@ -1,19 +1,16 @@
-﻿
-
+﻿using System;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+using XForm_Api_Rest.Model;
 
 namespace XForm_Api_Rest.Pages
 {
-    using System;
-    using Xamarin.Forms;
-    using Xamarin.Forms.Xaml;
-    using XForm_Api_Rest.Model;
-
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MenuPrincipal : TabbedPage
+    public partial class MenuPrincipalPage : TabbedPage
     {
         private UsuarioModel usuarioModel;
         public UsuarioModel UsuarioModel { get => usuarioModel; set => usuarioModel = value; }
-        public MenuPrincipal(UsuarioModel usuarioModel)
+        public MenuPrincipalPage(UsuarioModel usuarioModel)
         {
             InitializeComponent();
             this.UsuarioModel = usuarioModel;
@@ -24,7 +21,7 @@ namespace XForm_Api_Rest.Pages
 
         }
 
-        public MenuPrincipal()
+        public MenuPrincipalPage()
         {
             InitializeComponent();
         }

@@ -7,11 +7,11 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="ee5da52f-917e-4134-a312-23d376b40838"
+    Name="829d26a9-7859-415d-8fd7-28aba385de72"
     Publisher="CN=Devojeda"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="ee5da52f-917e-4134-a312-23d376b40838" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="829d26a9-7859-415d-8fd7-28aba385de72" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>XForm_Api_Rest.UWP</DisplayName>

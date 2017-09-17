@@ -1,12 +1,12 @@
-﻿namespace XForm_Api_Rest.Pages
-{
-    using Newtonsoft.Json;
-    using System;
-    using Xamarin.Forms;
-    using Xamarin.Forms.Xaml;
-    using XForm_Api_Rest.Model;
-    using XForm_Api_Rest.Utilidad;
+﻿using Newtonsoft.Json;
+using System;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+using XForm_Api_Rest.Model;
+using XForm_Api_Rest.Utilidad;
 
+namespace XForm_Api_Rest.Pages
+{
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
@@ -33,7 +33,7 @@
 
                 UsuarioModel usuarioModel = JsonConvert.DeserializeObject<UsuarioModel>(response);
                 App.IsUserLoggedIn = true;
-                Navigation.InsertPageBefore(new XForm_Api_Rest.Pages.MenuPrincipal(usuarioModel), this);
+                Navigation.InsertPageBefore(new XForm_Api_Rest.Pages.MenuPrincipalPage(usuarioModel), this);
                 await Navigation.PopAsync();
             }
             else

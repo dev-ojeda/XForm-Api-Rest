@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0F9DBE1E-1A9F-44CF-BAAF-9691EC4BEDCD}</ProjectGuid>
+    <ProjectGuid>{5C22FCC7-9583-49BB-8ECA-BFF0B9C89C97}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
     <RootNamespace>XForm_Api_Rest.iOS</RootNamespace>
@@ -136,22 +136,18 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XForm_Api_Rest\XForm_Api_Rest.csproj">
-      <Project>{d3ecdf10-4d43-41aa-a558-ee7b5d9399b6}</Project>
+      <Project>{1d795221-6e7f-40f4-8a00-c7e884b22c9f}</Project>
       <Name>XForm_Api_Rest</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Analyzer Include="..\..\..\..\PROYECTOS\Versiones CPL\DESARROLLO\01_09_17_V1\packages\SonarAnalyzer.CSharp.6.4.0.3347\analyzers\SonarAnalyzer.CSharp.dll" />
-    <Analyzer Include="..\..\..\..\PROYECTOS\Versiones CPL\DESARROLLO\01_09_17_V1\packages\SonarAnalyzer.CSharp.6.4.0.3347\analyzers\SonarAnalyzer.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Maquina_de_Humo.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\ic_accessibility_black_24dp.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\ic_build.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Maquina_de_Humo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

@@ -1,4 +1,6 @@
-﻿namespace XForm_Api_Rest.Pages
+﻿
+
+namespace XForm_Api_Rest.Pages
 {
     using System;
     using Xamarin.Forms;
@@ -8,7 +10,6 @@
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SchedulePage : ContentPage
     {
-
         private UsuarioModel _usuarioModel;
 
         public UsuarioModel UsuarioModel { get => _usuarioModel; set => _usuarioModel = value; }
@@ -27,13 +28,6 @@
         async void OnUpcomingAppointmentsButtonClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new XForm_Api_Rest.Pages.UpcomingAppointmentsPage());
-        }
-
-        async void OnLogoutButtonClicked(object sender, EventArgs e)
-        {
-            App.IsUserLoggedIn = false;
-            Navigation.InsertPageBefore(new XForm_Api_Rest.Pages.LoginPage(), this);
-            await Navigation.PopAsync();
         }
     }
 }

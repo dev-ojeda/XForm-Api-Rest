@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C0AF2E9F-636D-45C8-85F0-8F5FD2F41D66}</ProjectGuid>
+    <ProjectGuid>{7890BD38-9694-404D-A17A-53FFF26E343A}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -122,25 +122,18 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XForm_Api_Rest\XForm_Api_Rest.csproj">
-      <Project>{d3ecdf10-4d43-41aa-a558-ee7b5d9399b6}</Project>
+      <Project>{1d795221-6e7f-40f4-8a00-c7e884b22c9f}</Project>
       <Name>XForm_Api_Rest</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Analyzer Include="..\..\..\..\PROYECTOS\Versiones CPL\DESARROLLO\01_09_17_V1\packages\SonarAnalyzer.CSharp.6.4.0.3347\analyzers\SonarAnalyzer.CSharp.dll" />
-    <Analyzer Include="..\..\..\..\PROYECTOS\Versiones CPL\DESARROLLO\01_09_17_V1\packages\SonarAnalyzer.CSharp.6.4.0.3347\analyzers\SonarAnalyzer.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Maquina_de_Humo.png" />
+    <AndroidResource Include="Resources\drawable\ic_accessibility_black_24dp.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ic_build_black_24dp.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\ic_build_black_24dp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_accessibility_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable\Maquina_de_Humo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />

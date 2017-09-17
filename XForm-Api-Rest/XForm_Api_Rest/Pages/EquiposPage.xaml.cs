@@ -1,10 +1,12 @@
-﻿namespace XForm_Api_Rest.Pages
-{
-    using System;
-    using Xamarin.Forms;
-    using XForm_Api_Rest.Model;
-    using XForm_Api_Rest.ViewModel;
+﻿
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+using XForm_Api_Rest.Model;
+using XForm_Api_Rest.ViewModel;
 
+namespace XForm_Api_Rest.Pages
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class EquiposPage : ContentPage
     {
         private EquipoViewModel equipoViewModel;
@@ -25,11 +27,5 @@
             listarEquipos.ItemsSource = equipoViewModel.ListarEquipo;
         }
 
-        async void OnLogoutButtonClicked(object sender, EventArgs e)
-        {
-            App.IsUserLoggedIn = false;
-            Navigation.InsertPageBefore(new XForm_Api_Rest.Pages.LoginPage(), this);
-            await Navigation.PopAsync();
-        }
     }
 }

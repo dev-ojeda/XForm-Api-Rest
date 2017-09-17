@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{42A9B77D-D2E8-4D02-BE51-F686991B2DF1}</ProjectGuid>
+    <ProjectGuid>{9FA76CD2-D66B-48C3-B5B5-8810BFBE1090}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>XForm_Api_Rest.UWP</RootNamespace>
@@ -108,9 +108,6 @@
     <None Include="XForm_Api_Rest.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Maquina_de_Humo.png" />
-    <Content Include="Assets\ic_accessibility_black_24dp.png" />
-    <Content Include="Assets\ic_build_black_24dp.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-100.png" />
     <Content Include="Assets\LockScreenLogo.scale-125.png" />
@@ -156,15 +153,10 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XForm_Api_Rest\XForm_Api_Rest.csproj">
-      <Project>{d3ecdf10-4d43-41aa-a558-ee7b5d9399b6}</Project>
+      <Project>{1d795221-6e7f-40f4-8a00-c7e884b22c9f}</Project>
       <Name>XForm_Api_Rest</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Analyzer Include="..\..\..\..\PROYECTOS\Versiones CPL\DESARROLLO\01_09_17_V1\packages\SonarAnalyzer.CSharp.6.4.0.3347\analyzers\SonarAnalyzer.CSharp.dll" />
-    <Analyzer Include="..\..\..\..\PROYECTOS\Versiones CPL\DESARROLLO\01_09_17_V1\packages\SonarAnalyzer.CSharp.6.4.0.3347\analyzers\SonarAnalyzer.dll" />
-  </ItemGroup>
-  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

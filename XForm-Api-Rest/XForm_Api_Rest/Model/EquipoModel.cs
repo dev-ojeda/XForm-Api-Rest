@@ -2,10 +2,7 @@
 
 namespace XForm_Api_Rest.Model
 {
-    using System.Collections.Generic;
     using System.Collections.ObjectModel;
-    using Windows.UI.Xaml.Media.Imaging;
-    using Xamarin.Forms;
 
     public class EquipoModel
     {

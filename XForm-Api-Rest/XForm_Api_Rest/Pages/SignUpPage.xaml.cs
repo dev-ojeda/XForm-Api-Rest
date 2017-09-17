@@ -5,7 +5,6 @@
     using Xamarin.Forms;
     using Xamarin.Forms.Xaml;
     using XForm_Api_Rest.Model;
-
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SignUpPage : ContentPage
     {
@@ -31,13 +30,13 @@
                 if (rootPage != null)
                 {
                     App.IsUserLoggedIn = true;
-                    Navigation.InsertPageBefore(new MenuPrincipal(user), Navigation.NavigationStack.First());
+                    Navigation.InsertPageBefore(new MenuPrincipalPage(user), Navigation.NavigationStack.First());
                     await Navigation.PopToRootAsync();
                 }
             }
             else
             {
-               await  DisplayAlert("Sign Up", "Sign up failed", "OK");
+                await DisplayAlert("Sign Up", "Sign up failed", "OK");
             }
         }
 
